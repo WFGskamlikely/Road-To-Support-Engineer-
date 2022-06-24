@@ -1,0 +1,19 @@
+What is Server Latency? 
+
+If you call someone on the other side of the world how long does it take for you to hear the first ring? ( The ring symbolises the connection ) If Im in the United States and I want to reach someoen in Japan will I reach them instantly? Relativly speaking yes but in actuality no. In short it takes time for Data to travel. Especially around the world. So lets flip that over to your website/server. If all of your clients are in Texas, would it be wise to have a Datacenter in another country such as Brazil? The Answer is no. You will want to have a location for your server closes to you or the person you are trying to reach. This is called Server latency. ( Server latency would defined As ) 
+
+"In terms of web performance, latency can be considered as the time taken for a packet data to travel from one destination to another. "
+
+### 
+Real world Application: 
+
+A client needs you to see what location is best for there datacenter for there users in Texas using GCP? 
+
+How can you test that? And verify what Datacenter is best using GCP ( Google Cloud Platform). I quick route would be using an online tool found here: 
+https://www.gcping.com/
+
+__
+
+Looking over the results the datacenter/location the best place for our clients in Texas would be ( US-West4) 
+
+In theory for our users in Texas, our first packet of data ( pressing enter for searching/visiting the domain ) should reach its destination in 66ms. Now, this does not mean the site will load that fast. This is strictly the first packet.
