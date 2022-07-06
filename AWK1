@@ -1,0 +1,31 @@
+RTSE Course 
+security-601-study-room 
+###Please review my pre lecture notes
+
+#... = I took a break from writing this.
+#Notice the special charectors around certin words
+#/something/ = to search for something like grep 
+#$ = helps us count money I mean tell awk what column or feild we want
+#parameters = '',{}
+
+This is an quick zero to hero indepth over view of how to use a powerful command. You will need to familiarize yourself more by watching youtube videos and practicing at home. 
+### End of Notes , 
+#Lazlo you have our attention 
+Let me tell you about my dear friend awk {look} we have a love and hate relationship. Things were rough at 'first' but over time we grew $close 
+
+I know you realised these special charectors in the reading. Great! That is the hardest part about awk. Awk is a programming language. So welcome to awk! I was todays years old when I found out Im a programmer!
+
+    {First} lets talk about some ettique. We need to make sure that we are talking nicely to the linux kernel by using its language. And just how you sound speaking a language is just as important we need to use the right dialect or parameters in this case. 
+
+    awk '{print $1}' filename
+To start off we write the letters 'awk' for the name of the command. Then we will add '{ this will capture}' what we would like awk to do. {} For example we want to print a value. Lets add print. '{print }'. So now awk knows we want to print something. Now if we dont specify what we want to to print the computer will get mad and give you an error. Because someone was being difficult and not explaining themeselves. I hope you know that is a party foul. But any way back to what we were talking about.  You need to specify what you would like awk to print. We will need this cool money looking thing $ and a number. Now we get to the point of why DO I have this knowlege and dont know how or where to apply it. People always said Awk is hard. But I just think they may not have had the oppritunity to use its needed. Now look Im not saying im discrediting anyone or trying to sound snobbish. However look Ill keep it real I use awk on the daily. I live and die by that command. Real talk! You just need the reps in typing out the command and thinking about the out put you want. Remeber they "say" awk is supposed to be hard. And they crazy part is that your going to get jumped into awk. Watch
+Awk is supposed to be used for text processing and typically used as a data extraction and reporting tool. So you want to use this command in cases where you need to extract data from a file. So an example of that would be to show a list of IP aggresses that are in a file.
+
+In a perfect scenerio your looking at a nice access log. That has everything in a nice row. 
+#Insert Hyper link to another stack course of how an acces log looks and if you just have a file that is not in as nice of a row as your access log. Now adding onto what we had earlier with '{print}' we will need to add the $ and this will help signify what feild/column/  you will print. 
+
+So lets say we want to print column 2 in the access log because it shows us the IP address. The command will look something like this: 
+
+awk '{print $2}' ... OK We need to continue flirting with the kernel and specify the file name. Rememeber we talked about the access log so lets do that. 
+
+awk '{print $2}' access.log
