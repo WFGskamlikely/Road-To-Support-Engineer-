@@ -1,0 +1,43 @@
+### Notes no images for lecture: New branch may be needed
+
+rep: 
+
+Grep is a powerful tool that enables users in linux to find " peices of a file ". If you are looking for a specific pattern, line or word you can use grep. Grep is a powerful tool with alot of diffrent arguments. That will allow you to parse multiple files and parse the output itself. 
+
+Lets take a look at some commands that will help you file and log parse. 
+
+First we will take a look and see if we can find a file. 
+
+Real world application: Can you ensure the log directory is in the root directory: 
+
+ll | grep logs 
+
+
+Lets break down the command. the ll command outputs the files of the directory: While the pipe ( | ) allows us to hold the outputed data and control the output with the following command. Grep allows us to parse the ouputed data. 
+
+Well what does that mean? 
+
+ll is one command 
+(|) Pipe is another command
+Grep is another Command. 
+
+We want to output data the comes with ll: and search the output to see if the file name log is there.
+Image
+Now that we have been able to parse the output of a command. Lets see how to parse the contents of a file. 
+
+Real World Application: Hey team can you provide us any information on what could be triggering crons on our website. 
+
+We have a test file that holds contents of what is triggering crons located in the file called file1
+
+A reason we would want to use grep in this case is that files (especially log files) can be large. If we manually look through the file itself that can take some time. So we can use grep to search through the file for us and output the data we asked for grep to search for. 
+
+For example the command we would use in this case is: 
+
+grep "cron" file1
+
+Now lets break down the command. Since we are only looking for the crons in a particular file and not outputting data from a command we can tell the command prompt to grep (search) for this string " cron " and to look for that string in this file "file1"
+
+
+
+
+The output shows us that these crons are being triggered by the server.
